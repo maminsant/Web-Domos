@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <link rel="stylesheet" href="css/perfil_morador.css"> 
-    <link rel="stylesheet" href="css/anuncios.css"> 
+    <link rel="stylesheet" href="css/anuncios.css">
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/sidebar.js" defer></script>
@@ -69,37 +69,54 @@
                 </li>
             </ul>
         </aside>
+
         <main container class="main-container">
-            <div class="d-flex justify-content-center">
-                <div class="col-6 d-flex flex-column m-1">
-                    <div class="">
-                        <img src="css/img/moradora4.jpeg" alt="moradora 4" class="rounded-circle foto">
-                        <button class="btn btn-editar"><i class="fa-solid fa-user-pen flex-grow-1"></i> Editar Informações</button>
+            <div class="d-flex justify-content-center flex-row m-1 col-12 ">
+                <div class="col-4 d-flex flex-column align-items-end mx-4">
+                    <img src="css/img/moradora4.jpeg" alt="moradora 4" class="rounded-circle perfil-foto">
+                    <button class="btn btn-editar hover-0491a3 mt-3 mx-2"><i class="fa-solid fa-user-pen flex-grow-1"></i> Editar Informações</button>
+                </div>
+                
+                <div class="col-7 my-auto d-flex flex-column align-items-start mx-4">
+
+                    <div class="col-8 bg-e8e8e8 p-4 rborder3">
+                    <p class="caixa-texto">Camila Fraga Egydio</p>
+                    <p class="caixa-texto">12345678900</p>
+                    <p class="caixa-texto">testetes@gmail.com</p>
+                    <div class="d-flex justify-content-between">
+                        <p class="caixa-texto col-5">Num bloco</p>
+                        <p class="caixa-texto col-5">Nome Bloco</p>
                     </div>
-                    <div class="bg-cinza p-4 rborder3">
-                        <p class="caixa-texto">Nome Morador</p>
-                        <p class="caixa-texto">Senha senha 12345678</p>
-                        <p class="caixa-texto">testetes@gmail.com</p>
-                        <div class="d-flex col-6">
-                            <p class="caixa-texto">num bloco</p>
-                            <p class="caixa-texto ms-5">Nome Bloco</p>
-                        </div>
+
                     </div>
+                    
                 </div>
             </div>
 
-            <div class="card mt-2 m-lg-2 mb-3 p-0" style="max-width: 25rem;">
+            <div class="card mt-4 m-lg-2 mb-3 p-0" style="max-width: 25rem;">
             <div class="card-header bg-transparent">
               <div class="fs-5 color-titulo d-flex">
                 <div class="flex-grow-1"><p class="color-titulo">Zelma Regina</p></div>
-                <div class="dropdown">
-                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <i class="fa-solid fa-ellipsis-vertical text-dark"></i>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Excluir</a></li>
-                  </ul>
-                </div>
+                    <div class="p-1">
+                        <!-- Modal Excluir Anuncio-->
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-trash color-005661"></i></button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5 color-005661" id="exampleModalLabel">Deseja excluir esse anúncio?</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-exit" data-bs-dismiss="modal">Cancelar</button>
+                                        <button type="button" class="btn btn-confirmar">Confirmar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-pen color-005661"></i></a>
+                        <a href="#"><i class="fa-solid fa-star cor-estrela p-1"></i></a>
+                    </div>
               </div>
               <div>
               <h5 class="card-subtitle fs-6 color-subtitulo">Apto 203 - Bloco Amarelo</h5>
@@ -116,5 +133,11 @@
             <div class="card-footer tag-alimentacao"></div>
           </div>
 
+
+
+
+
+          <!-- Button trigger modal -->
+            
         </main>
     </div>
