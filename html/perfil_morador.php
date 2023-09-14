@@ -114,7 +114,46 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#"><i class="fa-solid fa-pen color-005661"></i></a>
+
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-pen color-005661"></i></button>
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title color-0491a3" id="staticBackdropLabel">Editar Anúncio</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>  
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control" id="titulo_aviso" placeholder="Título">
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <textarea class="form-control" id="descricao_aviso" placeholder="Descrição" rows="10"></textarea>
+                                            </div>
+
+                                            <select class="form-select mb-3">
+                                                <option selected class= "select-modal">Escolha a tag do anúncio</option>
+                                                <option value="1" class="select-modal">Alimentação</option>
+                                                <option value="2" class="select-modal">Vestuário</option>
+                                                <option value="3" class="select-modal">Eletrônicos</option>
+                                                <option value="4" class="select-modal">Decoração</option>
+                                                <option value="5" class="select-modal">Petshop</option>
+                                                <option value="6" class="select-modal">Serviços</option>
+                                            </select>
+                                            <input type="file" class="btn col-5"> 
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-exit" data-bs-dismiss="modal">Voltar</button>
+                                        <a href="anuncios.html"><button type="button" class="btn btn-publicar">Publicar</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                         <a href="#"><i class="fa-solid fa-star cor-estrela p-1"></i></a>
                     </div>
               </div>
