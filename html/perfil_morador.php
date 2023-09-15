@@ -11,11 +11,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <link rel="stylesheet" href="css/perfil_morador.css"> 
     <link rel="stylesheet" href="css/anuncios.css">
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/perfil_morador.css"> 
     <script src="js/sidebar.js" defer></script>
+    <script src="js/perfil_morador.js" defer></script>
     <link rel="shortcut icon" type="image/png" href="css/img/logo.png"/>
     <title> Perfil - Domos</title>
 </head>
@@ -108,7 +109,7 @@
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-exit" data-bs-dismiss="modal">Cancelar</button>
+                                        <button type="button" class="btn btn-saida" data-bs-dismiss="modal">Cancelar</button>
                                         <button type="button" class="btn btn-confirmar">Confirmar</button>
                                     </div>
                                 </div>
@@ -146,7 +147,7 @@
                                         </form>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-exit" data-bs-dismiss="modal">Voltar</button>
+                                        <button type="button" class="btn btn-saida" data-bs-dismiss="modal">Voltar</button>
                                         <a href="anuncios.html"><button type="button" class="btn btn-publicar">Publicar</button></a>
                                     </div>
                                 </div>
@@ -154,7 +155,9 @@
                         </div>
 
 
-                        <a href="#"><i class="fa-solid fa-star cor-estrela p-1"></i></a>
+                        <button id="estrela" estado="vazia" class="btn"><i class="fa-regular fa-star cor-estrela p-1" onclick="estrela()"></i><i class="fa-solid fa-star cor-estrela p-1"  style="display: none;"></i></button>
+                        <button id="estrela" estado="cheia" class="btn"><i class="fa-solid fa-star cor-estrela p-1"  style="display: none;"></i></button>
+
                     </div>
               </div>
               <div>

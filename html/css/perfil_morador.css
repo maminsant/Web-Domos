@@ -29,11 +29,11 @@
 	color: #fdfdfd;
 }
 
-.btn-exit{
+.btn-saida{
 	background-color: #cc0000;
     color: #fdfdfd;
 } 
 
-.btn-exit:hover{
+.btn-saida:hover{
     background-color: #b22222;
 }
